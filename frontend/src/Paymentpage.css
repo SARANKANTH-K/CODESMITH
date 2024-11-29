@@ -1,0 +1,48 @@
+.payment-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: Arial, sans-serif;
+  }
+  
+  .payment-page h2 {
+    margin-bottom: 10px;
+    color: #4caf50;
+  }
+  
+  .payment-page p {
+    margin: 5px 0;
+  }
+  
+  .payment-form {
+    width: 400px;
+    background: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .payment-form h3 {
+    margin-bottom: 20px;
+  }
+  
+  .payment-form button {
+    background: #4caf50;
+    color: white;
+    border: none;
+    padding: 10px;
+    width: 100%;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .payment-form button:disabled {
+    background: #ddd;
+    cursor: not-allowed;
+  }
+  
+  .payment-form .error {
+    color: red;
+    margin-top: 10px;
+  }
+  

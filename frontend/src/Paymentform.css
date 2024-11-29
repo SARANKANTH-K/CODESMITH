@@ -1,0 +1,83 @@
+/* Center the entire form on the screen */
+.payment-form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f0f4f8; /* Light blue-gray background */
+    padding: 20px; /* Ensure content doesn't touch screen edges on smaller devices */
+  }
+  
+  /* Form wrapper with clean design */
+  .payment-form {
+    background-color: #ffffff; /* White background for the form */
+    padding: 30px; /* Add padding inside the form */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for elevation */
+    width: 100%; /* Make form responsive */
+    max-width: 400px; /* Limit width to 400px on larger screens */
+    text-align: center; /* Center-align text in the form */
+  }
+  
+  /* Title styling */
+  .payment-form h2 {
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: #333; /* Dark text for the title */
+  }
+  
+  /* Stripe CardElement input field styling */
+  .StripeElement {
+    border: 1px solid #d1d5db; /* Light gray border */
+    border-radius: 5px;
+    padding: 12px;
+    font-size: 1rem;
+    color: #374151; /* Dark text color */
+    margin-bottom: 20px; /* Space between card input and button */
+    width: 100%;
+    box-sizing: border-box; /* Ensure proper box-sizing */
+  }
+  
+  /* Button styling */
+  .payment-form button {
+    background-color: #4caf50; /* Green button */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 12px 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth transitions */
+    width: 100%; /* Full width button */
+  }
+  
+  .payment-form button:disabled {
+    background-color: #9e9e9e; /* Gray color for disabled button */
+    cursor: not-allowed;
+  }
+  
+  .payment-form button:hover {
+    background-color: #43a047; /* Slightly darker green on hover */
+    transform: scale(1.03); /* Slightly enlarge button on hover */
+  }
+  
+  /* Error message styling */
+  .payment-form .error {
+    color: #d32f2f; /* Red for error text */
+    font-size: 0.875rem;
+    margin-top: 10px;
+  }
+  
+  /* Responsive design for smaller screens */
+  @media (max-width: 600px) {
+    .payment-form {
+      padding: 20px;
+    }
+  
+    .payment-form h2 {
+      font-size: 1.5rem;
+    }
+  }
+  

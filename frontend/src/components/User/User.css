@@ -1,0 +1,52 @@
+body {
+    margin: 0;
+    /* overflow-y: auto; 
+    overflow-x: hidden; */
+    overflow: hidden;
+}
+
+.background2 {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+}
+
+.background2::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-image: url('../../assets/images/carImg3.jpg'); 
+    background-size: cover;
+    background-position: center;
+    /* filter: blur(4px);  */
+    z-index: -1; 
+}
+
+.background2::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Black shadow with 50% opacity */
+    z-index: 0; /* Ensures it’s above the background image but behind the content */
+}
+
+.content {
+    position: absolute;
+    text-align: center;
+    font-size: 4rem;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    padding-top: 20%;
+    font-family: 'Great Vibes', cursive;
+    color: yellow;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+}
